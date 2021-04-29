@@ -34,15 +34,5 @@ public class ElectronicEquipment {
     }
 
 
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ElectronicEquipment that = (ElectronicEquipment) o;
-        return getUnits() == that.getUnits() &&
-                isOn() == that.isOn() &&
-                getType().equals(that.getType());
-    }
-    public int hashCode() {
-        return Objects.hash(getType(), getUnits(), isOn());
-    }
+   
 }
